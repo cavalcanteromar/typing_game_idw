@@ -1,0 +1,709 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr 1.3fr;
+      grid-template-columns: 1fr 3fr 1.3fr;
+}
+
+header nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .logo img {
+  width: clamp(70px, 5vw, 300px);
+  cursor: pointer;
+}
+
+header nav .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .navigation ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .navigation ul li {
+  list-style-type: none;
+}
+
+header nav .navigation ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: clamp(10px, 1vw, 100px);
+  font-family: monospace;
+}
+
+header nav .user {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+header nav .user .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px;
+}
+
+header nav .user .img div {
+  background-color: white;
+  width: clamp(40px, 3vw, 80px);
+  height: clamp(40px, 3vw, 80px);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-box-shadow: .1px .1px 2px grey;
+          box-shadow: .1px .1px 2px grey;
+}
+
+header nav .user .img div img {
+  margin-top: 5px;
+  width: clamp(30px, 2vw, 70px);
+}
+
+header nav .user .name_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: monospace;
+  font-size: clamp(10px, 0.9vw, 20px);
+}
+
+header nav .user .name_user small {
+  font-size: clamp(10px, 1vw, 2px);
+}
+
+main {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .center {
+  width: clamp(0px, 70vw, 2000px);
+  height: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .center .rules {
+  background-color: #00a0e4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .center .rules .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .center .rules .image img {
+  width: 100%;
+}
+
+main .center .rules .desafio {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  background-color: orange;
+}
+
+main .center .rules .desafio .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 22px;
+  padding-bottom: 50px;
+  font-weight: 600;
+  color: black;
+}
+
+main .center .rules .desafio .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: justify;
+  padding: 0 20px;
+}
+
+main .center .play {
+  background-color: orange;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .center .play .start {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.939);
+}
+
+main .center .play .start button {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 0px solid rgba(255, 255, 255, 0.939);
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.939);
+  cursor: pointer;
+}
+
+main .center .play .start .init {
+  background-color: lightseagreen;
+}
+
+main .center .play .start .stop {
+  background-color: red;
+}
+
+main .center .play .start .time {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 0 5px;
+}
+
+main .center .play .start .time div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+main .center .play .start .div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: orangered;
+  margin: 0 5px;
+  padding: 0 15px;
+}
+
+main .center .play .teclado {
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: rgba(196, 193, 193, 0.974);
+  border: 2px solid black;
+  padding: 20px;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+  color: red;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+main .center .play .teclado .fileira {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2px;
+  margin: .5px;
+  background-color: grey;
+}
+
+main .center .play .teclado .fileira .tecla {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  background-color: lightgrey;
+  width: 100%;
+  border: 1px solid black;
+  margin: .5px;
+}
+
+main .center .play .teclado .fileira .tecla div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 3px;
+  padding-left: 5px;
+}
+
+main .center .play .teclado .fileira .tecla div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3px;
+  padding-left: 5px;
+}
+
+main .center .play .teclado #fileira-1 #backspace {
+  padding-right: 20px;
+}
+
+main .center .play .teclado #fileira-1 #backspace div img {
+  width: 40px;
+  margin-left: -5px;
+}
+
+main .center .play .teclado .fileiras-centrais {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 3fr 1fr;
+      grid-template-columns: 5fr 3fr 1fr;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "f2 f2 enter" "f3 f3 f3";
+  margin: .5px;
+  position: relative;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: f2;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-2 #tab {
+  padding: 0 12px;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-2 #tab div:nth-child(2) img {
+  width: 100%;
+}
+
+main .center .play .teclado .fileiras-centrais #tecla-enter .enter {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: enter;
+  border: 1px solid black;
+  display: -ms-grid;
+  display: grid;
+  margin: .5px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 20% auto;
+      grid-template-rows: 20% auto;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 91%;
+  height: 188%;
+  background-color: lightgrey;
+  z-index: 1;
+}
+
+main .center .play .teclado .fileiras-centrais #tecla-enter .enter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-right: 10px;
+}
+
+main .center .play .teclado .fileiras-centrais #tecla-enter .enter div img {
+  width: 35px;
+}
+
+main .center .play .teclado .fileiras-centrais .union {
+  width: 3px;
+  height: 70px;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  background-color: grey;
+  z-index: 0;
+}
+
+main .center .play .teclado .fileiras-centrais #caracteres {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+main .center .play .teclado .fileiras-centrais #caracteres .div-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: f3;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 .sombra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 .sombra .tecla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 2;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 .sombra #caps div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 .sombra #caps div img {
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 25px;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 .sombra .border {
+  position: absolute;
+  right: 47px;
+  top: -8px;
+  border-top: .5px solid black;
+  border-right: .5px solid black;
+  width: 12px;
+  height: 49px;
+  background-color: grey;
+  z-index: 1;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 .sombra .border-2 {
+  position: absolute;
+  right: 58px;
+  top: -7px;
+  z-index: 8;
+  width: 5px;
+  height: 43px;
+  background-color: grey;
+  z-index: 1;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 .sombra #fileira-enter {
+  margin-right: 10px;
+  z-index: -1;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 .sombra #caracteres {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+main .center .play .teclado .fileiras-centrais #fileira-3 .div-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .center .play .teclado #fileira-4 #shift {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px;
+}
+
+main .center .play .teclado #fileira-4 #shift div img {
+  margin-right: 2px;
+  width: 25px;
+}
+
+main .center .play .teclado #fileira-5 .tecla {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px;
+}
+
+main .center .play .teclado #fileira-5 #space {
+  padding: 0 100px;
+  position: relative;
+}
+
+main .center .play .teclado #fileira-5 #space img {
+  width: 230px;
+  height: 15px;
+  position: absolute;
+  top: 37px;
+  left: -1px;
+}
+
+main .center .play .teclado #fileira-5 #winkey {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .center .play .teclado #fileira-5 #winkey div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .center .play .teclado #fileira-5 #winkey div img {
+  margin-top: 5px;
+  margin-right: 5px;
+  width: 20px;
+}
+
+main .center .play .teclado #fileira-5 #property div img {
+  width: 25px;
+}
+
+main .center .play .teclado #fileira-5 #space {
+  position: relative;
+}
+
+main .center .play .teclado #fileira-5 #space .enfeite-1 {
+  position: absolute;
+  width: 231px;
+  height: 11px;
+  top: 30px;
+  border-bottom: .5px solid black;
+  background-color: lightgrey;
+}
+
+main .center .play .teclado #fileira-5 #space .enfeite-1:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: .4vw;
+  right: -.7vw;
+  width: 1vw;
+  height: .65vw;
+  border-left: .5px solid black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: rgba(196, 193, 193, 0.974);
+}
+
+main .center .play .teclado #fileira-5 #space .enfeite-1:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: .39vw;
+  left: -.7vw;
+  width: 1vw;
+  height: .65vw;
+  border-right: .5px solid black;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: rgba(196, 193, 193, 0.974);
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  background-color: #d9f3f3;
+}
+
+footer div {
+  font-family: cursive;
+  color: #202ab2;
+}
+/*# sourceMappingURL=index.css.map */

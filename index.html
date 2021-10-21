@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Typing</title>
+        <!-- css -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="">Início</a></li>
+                        <li><a href="">Desafios</a></li>
+                        <li><a href="">Conquistas</a></li>
+                        <li><a href="">Sobre</a></li>
+                    </ul>
+                </div>
+                <div class="user">
+                    <div class="name_user">
+                        <div class="img">
+                            <div>
+                                <img src="img/user.png" alt="img_user">
+                            </div>
+                        </div>
+                        <div><small>Player</small><br>Romário</div>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="center">
+
+
+
+                <div class="rules">
+                    <div class="image">
+                        <img src="img/img_desafio.png" alt="">
+                    </div>
+                    <div class="desafio">
+                        <div class="name">Desafio Inércia</div>
+                        <div class="description">
+                            Neste desafio o usuário deve digitar na velocidade 1x as tecla/s do teclado virtual a direita,
+                            a medida que as teclas ficarem coloridas. A tolerância de erros irá mostrar
+                            quantas vezes o usuário errou a sequência. Boa sorte!
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="play">
+                    <div class="start">
+                        <button class="init">Começar</button>
+                        <button class="stop">Parar</button>
+                        <div class="time">
+                            <div>Temporizador</div>
+                            <div>00:00:00</div>
+                        </div>
+                        <div class="div1">Sequência de Acertos: 0</div>
+                        <div class="div2">Sequência de Erros: 0</div>
+                    </div>
+                    <div class="teclado">
+
+                        <div class="fileira" id="fileira-1">
+                            <div class="tecla">
+                                <div>"</div>
+                                <div>'</div>
+                            </div>
+                            <div class="tecla">
+                                <div>!</div>
+                                <div>1</div>
+                            </div>
+                            <div class="tecla">
+                                <div>@</div>
+                                <div>2</div>
+                            </div>
+                            <div class="tecla">
+                                <div>#</div>
+                                <div>3</div>
+                            </div>
+                            <div class="tecla">
+                                <div>$</div>
+                                <div>4</div>
+                            </div>
+                            <div class="tecla">
+                                <div>%</div>
+                                <div>5</div>
+                            </div>
+                            <div class="tecla">
+                                <div>¨</div>
+                                <div>6</div>
+                            </div>
+                            <div class="tecla">
+                                <div>&</div>
+                                <div>7</div>
+                            </div>
+                            <div class="tecla">
+                                <div>*</div>
+                                <div>8</div>
+                            </div>
+                            <div class="tecla">
+                                <div>(</div>
+                                <div>9</div>
+                            </div>
+                            <div class="tecla">
+                                <div>)</div>
+                                <div>0</div>
+                            </div>
+                            <div class="tecla">
+                                <div>_</div>
+                                <div>-</div>
+                            </div>
+                            <div class="tecla">
+                                <div>+</div>
+                                <div>=</div>
+                            </div>
+                            <div class="tecla" id="backspace">
+                                <div><img src="img/arrow-left.png" alt=""></div>
+                                <div>Backspace</div>
+                            </div>
+                        </div>
+
+                        <div class="fileiras-centrais">
+                            <div class="fileira" id="fileira-2">
+                                <div class="tecla" id="tab">
+                                    <div>Tab</div>
+                                    <div><img src="img/arrow-crossing.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="tecla">
+                                    <div>Q</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>W</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>E</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>R</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>T</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>Y</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>U</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>I</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>O</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>P</div>
+                                </div>
+                                <div class="tecla">
+                                    <div>`</div>
+                                    <div>´</div>
+                                </div>
+                                <div class="tecla" id="caracteres">
+                                    <div class="div-1">{</div>
+                                    <div class="div-2">
+                                        <div class="left">[</div>
+                                        <div class="right">ª</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="fileira" id="tecla-enter">
+                                <div class="enter">
+                                    <div>Enter</div>
+                                    <div><img src="img/arrow-enter.png" alt=""></div>
+                                </div>
+                                <div class="union"></div>
+                            </div>
+
+
+
+                            <div class="fileira" id="fileira-3">
+                                <div class="sombra">
+                                    <div class="tecla" id="caps">
+                                        <div>Caps Lock</div>
+                                        <div><img src="img/caps-lock.png"
+                                                alt=""></div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>A</div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>S</div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>D</div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>F</div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>G</div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>H</div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>J</div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>K</div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>L</div>
+                                    </div>
+                                    <div class="tecla">
+                                        <div>Ç</div>
+                                    </div>
+                                    <div class="tecla" id="caracteres">
+                                        <div>^</div>
+                                        <div>~</div>
+                                    </div>
+                                    <div class="tecla" id="caracteres">
+                                        <div class="div-1">{</div>
+                                        <div class="div-2">
+                                            <div class="left">]</div>
+                                            <div class="right">º</div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div></div>
+                                    <div class="border"></div>
+                                    <div class="border-2"></div>
+                                    <div class="tecla" id="fileira-enter">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fileira" id="fileira-4">
+                            <div class="tecla" id="shift">
+                                <!-- <div>Shift</div> -->
+                                <div><img src="img/shift.png" alt="">Shift</div>
+                            </div>
+                            <div class="tecla">
+                                <div>|</div>
+                                <div>\</div>
+                            </div>
+                            <div class="tecla">
+                                <div>Z</div>
+                            </div>
+                            <div class="tecla">
+                                <div>X</div>
+                            </div>
+                            <div class="tecla">
+                                <div>C</div>
+                            </div>
+                            <div class="tecla">
+                                <div>V</div>
+                            </div>
+                            <div class="tecla">
+                                <div>B</div>
+                            </div>
+                            <div class="tecla">
+                                <div>N</div>
+                            </div>
+                            <div class="tecla">
+                                <div>M</div>
+                            </div>
+                            <div class="tecla">
+                                <div>.</div>
+                                <div>,</div>
+                            </div>
+                            <div class="tecla">
+                                <div></div>
+                                <div>.</div>
+                            </div>
+                            <div class="tecla">
+                                <div>:</div>
+                                <div>;</div>
+                            </div>
+                            <div class="tecla">
+                                <div>?</div>
+                                <div>/</div>
+                            </div>
+                            <div class="tecla" id="shift">
+                                <div>Shift</div>
+                                <div><img src="img/shift.png" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="fileira" id="fileira-5">
+                            <div class="tecla" id="ctrl">
+                                <div>Ctrl</div>
+                            </div>
+                            <div class="tecla" id="winkey">
+                                <div><img src="img/winkey.png" alt=""></div>
+                            </div>
+                            <div class="tecla">
+                                <div>Alt</div>
+                            </div>
+                            <div class="tecla" id="space">
+                                <img src="img/enfeite.png" alt="">
+                            </div>
+                            <div class="tecla">
+                                <div>Alt Gr</div>
+                            </div>
+                            <div class="tecla" id="winkey">
+                                <div><div><img src="img/winkey.png" alt=""></div></div>
+                            </div>
+                            <div class="tecla" id="property">
+                                <div><img src="img/property.png" alt=""></div>
+                            </div>
+                            <div class="tecla" id="ctrl">
+                                <div>Ctrl</div>
+                            </div>
+
+                        </div>
+
+                    </dv>
+                </div>
+
+
+
+            </div>
+        </main>
+        <footer>
+            <div>
+                Powered by Romário Cavalcante
+            </div>
+        </footer>
+
+    </body>
+</html>
